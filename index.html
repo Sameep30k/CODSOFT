@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <button class="button1" onclick="clearDisplay()">C</button>
+    <button class="button" onclick="deleteLastChar()">&#9003;</button>
+    <button class="button operation" onclick="appendCharacter('/')">/</button>
+    <button class="button" onclick="appendCharacter('7')">7</button>
+    <button class="button" onclick="appendCharacter('8')">8</button>
+    <button class="button" onclick="appendCharacter('9')">9</button>
+    <button class="button operation" onclick="appendCharacter('*')">*</button>
+    <button class="button" onclick="appendCharacter('4')">4</button>
+    <button class="button" onclick="appendCharacter('5')">5</button>
+    <button class="button" onclick="appendCharacter('6')">6</button>
+    <button class="button operation" onclick="appendCharacter('-')">-</button>
+    <button class="button" onclick="appendCharacter('1')">1</button>
+    <button class="button" onclick="appendCharacter('2')">2</button>
+    <button class="button" onclick="appendCharacter('3')">3</button>
+    <button class="button operation" onclick="appendCharacter('+')">+</button>
+    <button class="button" onclick="appendCharacter('0')">0</button>
+    <button class="button" onclick="appendCharacter('.')">.</button>
+    <button class="button equals" onclick="calculateResult()">=</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
